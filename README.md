@@ -1,14 +1,14 @@
-# PPT市场
+﻿# PPT市场
 
 ### 简介
 PPT市场小程序是一个可下载ppt模板的小程序，可在应用内打开ppt模板，预览ppt，并下载转发
 
 ### 快速开始
 ```
-git clone https://gitee.com/abner001/wx-ppt.git
+git clone https://github.com/youxikaifa/wx-ppt
 ```
-### Github
-[https://github.com/youxikaifa/wx-ppt](https://github.com/youxikaifa/wx-ppt)
+### Gitee
+[https://gitee.com/abner001/wx-ppt](https://gitee.com/abner001/wx-ppt)
 <br />
 代码下载后，用小程序 IDE 打开后即可使用。
 <br />

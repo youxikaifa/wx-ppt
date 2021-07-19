@@ -1,0 +1,24 @@
+/* pages/topic/category/detail/detail.wxss */
+.re-item-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 20rpx;
+}
+
+.re-item-container .pre {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.pre .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30rpx;
+}
+
+/* .pre .item image{
+  width: 40rpx;
+  height: 40rpx;
+} */

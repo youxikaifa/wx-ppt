@@ -1,0 +1,42 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="content">详情</view>
+  <block slot="backText">返回</block>
+</cu-custom>
+<scroll-view scroll-y class="scrollPage">
+  <view class="re-item-container margin">
+    <view class=""><text class="text-black text-bold text-xxl">{{info.name}}</text></view>
+    <view class="pre margin-bottom margin-top-sm">
+      <view class="item">
+        <image src="../../../images/recommend/icon_downloaders.png" style="width:35rpx;height:35rpx;"></image>
+        <text class="text-sm text-d6">{{info.downloaders}}</text>
+      </view>
+      <view class="item">
+        <image src="../../../images/recommend/icon_size.png" style="width:45rpx;height:45rpx;"></image><text
+          class="text-sm text-d6">{{info.size}}</text>
+      </view>
+      <view class="item">
+        <image src="../../../images/recommend/icon_scan.png" style="width:40rpx;height:40rpx;"></image><text
+          class="text-sm text-d6">{{info.scan}}</text>
+      </view>
+    </view>
+    <view class="descrip"><text class="text-gray ">{{info.descrip}}</text>
+    </view>
+  </view>
+  <view class="image-list margin" wx:for="{{info.images}}" wx:key="*this" wx:for-index="index">
+    <image class="margin-top-sm" bindtap="bindImageTap" src="{{domain}}{{item}}" mode="widthFix" data-index="{{index}}">
+    </image>
+  </view>
+
+  <view class='cu-tabbar-height'></view>
+  <view class="progress-container" wx:if="{{isDownload}}">
+    <view class="cu-progress round sm striped active margin-sm">
+      <view class="bg-green" style="width:{{progress}}%;"></view>
+    </view>
+  </view>
+  <view class="download-container bg-white shadow foot ">
+    <view class="btn-container text-center margin" bindtap="bindCopyTap"><text
+        class="round bg-cyan shadow padding">复制下载链接</text></view>
+    <view class="btn-container text-center margin" bindtap="bindDownloadTap"><text
+        class="round bg-blue shadow padding">下载并预览</text></view>
+  </view>
+</scroll-view>

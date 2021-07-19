@@ -1,0 +1,21 @@
+<!--pages/library/library.wxml-->
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="content">详情</view>
+  <block slot="backText">返回</block>
+</cu-custom>
+<scroll-view scroll-y class="scrollPage">
+	<view class="grid col-2 padding-sm">
+		<view class="padding-xs" wx:for="{{categories}}" style="position: relative;" data-index="{{index}}">
+			<view class="bg-img padding-sm flex align-end radius shadow-blur" style="background-image: url('{{item.descImg}}');height: 220rpx;" bindtap="bindCategoryTap" data-index="{{index}}">
+
+			</view>
+			<view class="bg-shadeBottom flex justify-end text-center radius" style="position:absolute;bottom:10rpx;right:10rpx;left:10rpx;height:50rpx;">
+				<view class="text-right margin-right" style="width:100%">
+					{{item.name}}
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class='cu-tabbar-height'></view>
+
+</scroll-view>

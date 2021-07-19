@@ -1,0 +1,55 @@
+/* pages/recommend/detail/detail.wxss */
+.re-item-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 20rpx;
+}
+
+.re-item-container .pre{
+  display: flex;
+  flex-direction: row;
+}
+
+.re-item-container .descrip{
+  display: flex;
+  margin-right: 30rpx;
+}
+
+.pre .item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30rpx;
+}
+
+.image-list{
+  display: flex;
+  flex-direction: column;
+}
+
+.image-list image{
+  width: 100%;
+  border-radius: 10rpx;
+}
+
+.download-container{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn-container{
+  width: 40%;
+}
+
+.progress-container{
+  position: fixed;
+  bottom: 100rpx;
+  width: 100%;
+  display: flex;
+}

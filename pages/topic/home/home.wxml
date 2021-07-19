@@ -1,0 +1,10 @@
+<scroll-view scroll-y class="scrollPage">
+  <view class='nav-list margin-top-lg'>
+    <navigator open-type="navigate" hover-class='none' url="" bindtap="bindCategoryTap" class="nav-li bg-{{item.color}}"
+      wx:for="{{styles}}" wx:key data-index="{{index}}">
+      <view class="nav-title">{{item.name}}</view>
+      <view class="nav-name">{{}}</view>
+    </navigator>
+  </view>
+  <view class='cu-tabbar-height'></view>
+</scroll-view>

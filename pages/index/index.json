@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "recommend": "/pages/recommend/home/home",
+    "topic": "/pages/topic/home/home"
+  }
+}

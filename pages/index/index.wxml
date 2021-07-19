@@ -1,0 +1,21 @@
+<cu-custom bgColor="bg-gradual-blue">
+  <view slot="content">PPT市场</view>
+</cu-custom>
+
+<recommend wx:if="{{PageCur=='recommend'}}"></recommend>
+<topic wx:if="{{PageCur=='topic'}}"></topic>
+
+<view class="cu-bar tabbar bg-white shadow foot">
+  <view class="action" bindtap="NavChange" data-cur="recommend">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/recommend{{PageCur=='recommend'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='recommend'?'text-green':'text-gray'}}">首页</view>
+  </view>
+  <view class="action" bindtap="NavChange" data-cur="topic">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/topic{{PageCur=='topic'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='topic'?'text-green':'text-gray'}}">专题</view>
+  </view>
+</view>
